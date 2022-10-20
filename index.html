@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bài tập JS buổi 12-13</title>
+  <style>
+    /* EXERCISE 1 */
+    .exercise {
+      height: auto;
+      width: 20rem;
+      background-color: bisque;
+      border-radius: 1rem;
+      padding: 2rem;
+      margin: 2rem;
+    }
+
+    .input {
+      font-size: 1.5rem;
+
+    }
+
+    .btn {
+      margin-top: 1.5rem;
+      height: 2.5rem;
+      width: 7rem;
+      background-color: green;
+      color: #fff;
+      border-radius: 10px;
+      border: none;
+    }
+
+  </style>
+</head>
+
+<body>
+  <!-- EXERCISE 1  -->
+  <div class="exercise">
+    <form class="info">
+      <div class="time">
+        <h3>Số ngày công</h3>
+        <input id="workingDay" class="input" type="text" name="name" placeholder="Nhập số ngày công" />
+      </div>
+      <div class="salary">
+        <button onclick="ex1()" type="button" class="btn">
+          Tính tiền lương
+        </button>
+      </div>
+    </form>
+
+    <div style="clear: both"></div>
+    <div id="totalSalary">
+      <h2>
+        Tổng tiền lương:
+        <span id="xuatTien" class="xuatTien"></span>
+        VND
+      </h2>
+    </div>
+  </div>
+  <!-- EXERCISE 2  -->
+  <div class="exercise">
+    <form class="info">
+      <div class="numberone">
+        <h3>Số thứ nhất</h3>
+        <input id="number1" class="input" type="text" name="name" placeholder="Nhập số thứ 1" />
+      </div>
+      <div class="numbertwo">
+        <h3>Số thứ hai</h3>
+        <input id="number2" class="input" type="text" name="name" placeholder="Nhập số thứ 2" />
+      </div>
+      <div class="numberthree">
+        <h3>Số thứ ba</h3>
+        <input id="number3" class="input" type="text" name="name" placeholder="Nhập số thứ 3" />
+      </div>
+      <div class="numberfour">
+        <h3>Số thứ tư</h3>
+        <input id="number4" class="input" type="text" name="name" placeholder="Nhập số thứ 4" />
+      </div>
+      <div class="numberfive">
+        <h3>Số thứ năm</h3>
+        <input id="number5" class="input" type="text" name="name" placeholder="Nhập số thứ 5" />
+      </div>
+      <div class="average">
+        <button onclick="ex2()" type="button" class="btn">
+          Tính trung bình
+        </button>
+      </div>
+    </form>
+
+    <div style="clear: both"></div>
+    <div id="trungBinh">
+      <h2>
+        Trung bình 5 số:
+        <span id="xuatTB" class="xuatTB"></span>
+      </h2>
+    </div>
+  </div>
+  <!-- EXERCISE 3  -->
+  <div class="exercise">
+    <form class="info">
+      <div class="Money">
+        <h3>Số tiền USD</h3>
+        <input id="USD" class="input" type="text" name="name" placeholder="Nhập số tiền USD" />
+      </div>
+      <div class="dollar">
+        <button onclick="ex3()" type="button" class="btn">
+          Quy đổi
+        </button>
+      </div>
+    </form>
+
+    <div style="clear: both"></div>
+    <div id="VND">
+      <h2>
+        Số tiền VNĐ:
+        <span id="xuatTienVND" class="xuatTienVND"></span>
+        VND
+      </h2>
+    </div>
+  </div>
+  <!-- EXERCISE 4 -->
+  <div class="exercise">
+    <form class="info">
+      <div class="length">
+        <h3>Chiều dài</h3>
+        <input id="lengthID" class="input" type="text" name="name" placeholder="Nhập chiều dài" />
+      </div>
+      <div class="width">
+        <h3>Chiều rộng</h3>
+        <input id="widthID" class="input" type="text" name="name" placeholder="Nhập chiều rộng" />
+      </div>
+      <div class="circumference">
+        <button onclick="circumference()" type="button" class="btn">
+          Tính chu vi
+        </button>
+      </div>
+      <div class="area">
+        <button onclick="area()" type="button" class="btn">
+          Tính diện tích
+        </button>
+      </div>
+    </form>
+
+    <div style="clear: both"></div>
+    <div id="chuVi">
+      <h2>
+        Chu vi hình chữ nhật:
+        <span id="xuatChuVi" class="xuatChuVi"></span>
+
+      </h2>
+    </div>
+
+    <div style="clear: both"></div>
+    <div id="dienTich">
+      <h2>
+        Diện tích hình chữ nhật:
+        <span id="xuatDienTich" class="xuatDienTich"></span>
+      </h2>
+    </div>
+  </div>
+   <!-- EXERCISE 5  -->
+   <div class="exercise">
+    <form class="info">
+      <div class="time">
+        <h3>Số có 2 chữ số</h3>
+        <input id="number" class="input" type="text" name="name" placeholder="Nhập số có 2 chữ số" />
+      </div>
+      <div class="n">
+        <button onclick="ex5()" type="button" class="btn">
+          Tổng ký số
+        </button>
+      </div>
+    </form>
+
+    <div style="clear: both"></div>
+    <div id="sum">
+      <h2>
+        Tổng ký số trên:
+        <span id="xuatTong" class="xuatTong"></span>
+      
+      </h2>
+    </div>
+  </div>
+  <script src="./index.js"></script>
+</body>
+
+</html>
